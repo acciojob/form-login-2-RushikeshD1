@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const btn = document.getElementById("submit");
+const btn = document.getElementById("submit-btn");
 
 btn.addEventListener('click', (e) =>{
 	e.preventDefault();
@@ -9,7 +9,12 @@ btn.addEventListener('click', (e) =>{
 	const phone = document.getElementById("phone").value;
 	const email = document.getElementById("email").value;
 
-	alert(`First Name: ${fname} Last Name: ${lname} Phone Number: ${phone} Email ID: ${email}`)
+	alert(
+		`First Name: ${fname} ` +
+		`Last Name: ${lname} ` +
+		`Phone Number: ${phone} ` +
+		`Email ID: ${email}`
+	);
 })
 
 
